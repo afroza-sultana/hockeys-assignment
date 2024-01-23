@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's</title>
+    <!-- Tailwind Css & daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom colors  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'gray-color-1': 'rgba(255, 255, 255, 0.60)',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- banner starts here -->
+    <main class="container mx-auto px-5">
+        <div class="relative">
+            <div class="carousel w-full mt-6 lg:mt-14 mb-4 lg:mb-24 h-52 lg:h-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-3 lg:gap-5 bottom-4 lg:bottom-8 lg:left-10 left-40 ">
+                    <a href="#slide3" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center ">❮</a> 
+                    <a href="#slide2" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full ">
+                  <img src="./Images/4.png" class="w-full" />
+                  <div class="absolute flex gap-5 bottom-8 pl-10">
+                    <a href="#slide1" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center">❮</a> 
+                    <a href="#slide3" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/banner-3.jpg" class="w-full rounded-2xl" />
+                    <div class="absolute flex gap-5 bottom-8 pl-10">
+                      <a href="#slide2" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center">❮</a> 
+                      <a href="#slide1" class="lg:btn btn-circle bg-black border-none text-white w-7 h-7 lg:w-12 lg:h-12 flex text-center  items-center justify-center">❯</a>
+                    </div>
+                  </div>
+                 
+              </div>
+              <div class="bg-black p-4 lg:p-8 rounded-2xl max-w-lg lg:absolute lg:bottom-32 lg:right-8">
+                <h2 class="text-white text-lg lg:text-2xl font-bold">Meet all the heroes from the field</h2>
+                <p class="text-gray-color-1 pt-2 lg:pt-4 text-sm lg:text-[16px]"> Hockey’s gives you unparalleled durability and performance. Now you can focus on your game and get results.</p>
+              </div>
+        </div>
+    </main>
+</body>
+</html>
