@@ -14,14 +14,24 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'gray-color-1': 'rgba(255, 255, 255, 0.60)',
+                'gray-color': 'rgba(255, 255, 255, 0.60)',
+                
               }
             }
           }
         }
       </script>
+      <!-- google font manrope -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  .font-manrope{
+    font-family: 'Manrope', sans-serif;
+  }
+</style>
 </head>
-<body>
+<body class="font-manrope">
     <!-- banner starts here -->
     <main class="container mx-auto px-5">
         <div class="relative">
@@ -50,10 +60,39 @@
                  
               </div>
               <div class="bg-black p-4 lg:p-8 rounded-2xl max-w-lg lg:absolute lg:bottom-32 lg:right-8">
-                <h2 class="text-white text-lg lg:text-2xl font-bold">Meet all the heroes from the field</h2>
-                <p class="text-gray-color-1 pt-2 lg:pt-4 text-sm lg:text-[16px]"> Hockey’s gives you unparalleled durability and performance. Now you can focus on your game and get results.</p>
+                <h2 class="text-white text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h2>
+                <p class="text-gray-color pt-2 lg:pt-4 text-sm lg:text-[16px]"> Hockey’s gives you unparalleled durability and performance. Now you can focus on your game and get results.</p>
               </div>
         </div>
+        <!-- banner ends here  -->
+        <hr class="border-dashed mt-10">
+        <!-- Professional Hockeys Club section  -->
+        <section>
+          <div>
+            <div>
+              <h1 class="lg:text-4xl text-xl font-extrabold black lg:pt-8 pt-6 lg:pb-6 pb-4 text-center">Professional Hockeys Club</h1>
+            <p class="text-gray-500 font-medium text-sm lg:text-base text-center">Hockey is taking the hockey world by storm with the most revolutionary advance in hockey stick manufacturing<br>  in the history of the sport Now you can focus on your game and get results.</p>
+            </div>
+            <hr class="lg:mt-8 mt-6 mb:6 lg:mb-12 border-dashed">
+            <div class="flex flex-col lg:flex-row lg:justify-around items-center lg:pr-32">
+              
+              <div class="relative">
+                <span class="text-black font-extrabold text-3xl absolute top-12 left-9">87%</span>
+                <span class="w-32 lg:absolute  loading loading-spinner text-error "></span>
+              </div>
+              <div class="relative">
+                <span class="text-black font-extrabold text-3xl absolute top-12 left-9">95%</span>
+                <span class="w-32 lg:absolute  loading loading-spinner text-accent "></span>
+              </div>
+              <div class="relative">
+                <span class="text-black font-extrabold text-3xl absolute top-12 left-9">90%</span>
+                <span class="w-32 lg:absolute  loading loading-spinner text-warning "></span>
+              </div>
+              <div class="relative">
+                <span class="text-black font-extrabold text-3xl absolute top-12 left-9">80%</span>
+                <span class="w-32 lg:absolute  loading loading-spinner text-info "></span>
+              </div>
+        </section>
     </main>
 </body>
 </html>
